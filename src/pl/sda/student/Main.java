@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -18,6 +20,13 @@ public class Main {
         Student student5 = new Student("Aleksander", "Kwaśnik" ,53);
 
         ObjectMapper objectMapper = new ObjectMapper();
+        List<Student> studentlist = new ArrayList<>();
+        studentlist.add(student);
+        studentlist.add(student1);
+        studentlist.add(student2);
+        studentlist.add(student3);
+        studentlist.add(student4);
+        studentlist.add(student5);
 
         try {
             objectMapper.writeValue (new File("student.json"), student);
