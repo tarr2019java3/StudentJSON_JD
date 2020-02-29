@@ -21,11 +21,11 @@ public class Main {
 
         try {
             objectMapper.writeValue (new File("student.json"), student);
-            objectMapper.writeValue(new File("student1.json"), student1);
-            objectMapper.writeValue(new File("student2.json"), student2);
-            objectMapper.writeValue(new File("student3.json"), student3);
-            objectMapper.writeValue(new File("student.json"), student4);
-            objectMapper.writeValue(new File("student.json"), student5);
+            objectMapper.writeValue(new File("student1.json"), student);
+            objectMapper.writeValue(new File("student2.json"), student);
+            objectMapper.writeValue(new File("student3.json"), student);
+            objectMapper.writeValue(new File("student.json"), student);
+            objectMapper.writeValue(new File("student.json"), student);
         } catch (IOException e) {
             e.printStackTrace();
         }
